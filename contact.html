@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css">
+    <title>Education website</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      body{
+        background-image: url(./Assets/bg-texture.png);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html"><h4>EGATOR</h4></a>
+        <ul class="nav_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </nav>
+
+        <!---------------------END OF NAVBAR------------------------->
+
+        <section class="contact">
+          <div class="container contact_container">
+            <aside class="contact_aside">
+              <div class="aside_image">
+                <img src="./Assets/contct.svg" alt="">
+              </div>
+              <h2>Contact us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit a eveniet dignissimos.</p>
+              <ul class="contact_details">
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <h5>+923479164941</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <h5>fakharislam649@gmail.com</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-map-marker-alt"></i>
+                  <h5>Karachi, Pakistan</h5>
+                </li>
+              </ul>
+              <ul class="contact_socials">
+               <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+               <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+            </aside>
+
+            <form action="https://formspree.io/f/xblrrowa"  method="POST" class="contact_form">
+              <div class="form_name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+              </div>
+              <input type="email" name="Email Address" placeholder="Your Email Address" required>
+              <textarea name="Message" rows="7" required placeholder="Type your message"></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </section>
+
+
+
+
+    <footer>
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"><h4>EGATOR</h4></a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="footer_2">
+          <h4>Permalinks</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+923428104482</p>
+            <p>fakharislam649@gmail.com</p>
+          </div>
+        </div>
+
+        <ul class="footer_socials">
+          <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+          <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+          <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+          <li><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+        </div>
+
+      </div>
+      <div class="footer_copyright">
+        <small>Copyright &copy; EGATOR YOUTUBE Tutorial</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="App.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
